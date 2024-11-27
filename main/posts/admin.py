@@ -13,6 +13,6 @@ class PostAdmin(admin.ModelAdmin):
     def post_body(self, obj):
         return obj.body
     post_body.short_description = 'Body'
-    post_body.admin_order_field = None  
-
+    post_body.admin_order_field = None
+    
 admin.site.register(Post, PostAdmin)
